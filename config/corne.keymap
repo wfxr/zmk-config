@@ -324,8 +324,8 @@
         sym_layer {
             bindings = <
 &trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp LPAR  &kp RPAR  &kp BSLH  &kp GRAVE
-&trans  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp EQUAL  &kp LBKT  &kp RBKT  &kp PIPE  &trans
-&trans  &trans    &trans  &trans    &trans    &trans       &kp TILDE  &trans     &kp LBRC  &kp RBRC  &trans    &trans
+&trans  &trans    &trans  &trans    &trans    &trans       &kp SQT    &kp DQT    &kp LBKT  &kp RBKT  &kp PIPE  &kp TILDE
+&trans  &trans    &trans  &trans    &trans    &trans       &trans     &kp UNDER  &kp LBRC  &kp RBRC  &trans    &trans
                           &trans    &trans    &trans       &trans     &trans     &trans
             >;
 
@@ -343,15 +343,15 @@
             label = "NAV";
         };
 
-        TBD {
+        APP {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&kp LG(GRAVE)  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                               &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
-            label = "TBD";
+            label = "APP";
         };
     };
 };
