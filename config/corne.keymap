@@ -301,10 +301,10 @@
 
         default_layer {
             bindings = <
-&kp TAB            &kp Q          &kp W            &kp E         &kp R                &kp T    &kp Y  &kp U                &kp I       &kp O       &kp P             &kp BACKSPACE
-&lmt LCTRL ESCAPE  &lmt LSHIFT A  &kp S            &kp D         &kp F                &kp G    &kp H  &kp J                &kp K       &kp L       &lmt RSHIFT SEMI  &kp RCTRL
-&kp LGUI           &kp Z          &hml LEFT_GUI X  &kp C         &kp V                &kp B    &kp N  &kp M                &kp COMMA   &kp PERIOD  &kp SLASH         &kp RGUI
-                                                   &kp LEFT_ALT  &thumb_lt SYM SPACE  &mo 1    &mo 4  &thumb_lt NAV ENTER  &caps_word
+&kp TAB         &kp Q          &kp W  &kp E         &kp R                &kp T    &kp Y  &kp U                &kp I       &kp O       &kp P             &kp BACKSPACE
+&hml LCTRL ESC  &hml LSHIFT A  &kp S  &kp D         &kp F                &kp G    &kp H  &kp J                &kp K       &kp L       &hmr RSHIFT SEMI  &hmr RCTRL DEL
+&kp LGUI        &kp Z          &kp X  &kp C         &kp V                &kp B    &kp N  &kp M                &kp COMMA   &kp PERIOD  &kp SLASH         &kp RGUI
+                                      &kp LEFT_ALT  &thumb_lt SYM SPACE  &mo 1    &mo 4  &thumb_lt NAV ENTER  &caps_word
             >;
 
             label = "DEFAULT";
