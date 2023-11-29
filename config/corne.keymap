@@ -301,10 +301,10 @@
 
         default_layer {
             bindings = <
-&none  &kp Q                &kp W            &kp E                 &kp R                &kp T         &kp Y                    &kp U                &kp I       &kp O                  &kp P                         &none
-&none  &hml LEFT_CONTROL A  &hml LEFT_ALT S  &kp D                 &kp F                &kp G         &kp H                    &kp J                &kp K       &hmr RIGHT_ALT L       &hmr RIGHT_CONTROL SEMICOLON  &none
-&none  &hml LEFT_SHIFT Z    &hml LEFT_GUI X  &kp C                 &kp V                &kp B         &kp N                    &kp M                &kp COMMA   &hmr RIGHT_GUI PERIOD  &hmr RIGHT_SHIFT SLASH        &none
-                                             &hsk LEFT_GUI LSHIFT  &thumb_lt SYM SPACE  &awm_super    &thumb_lt NUM BACKSPACE  &thumb_lt NAV ENTER  &caps_word
+&kp TAB            &kp Q          &kp W            &kp E         &kp R                &kp T    &kp Y  &kp U                &kp I       &kp O       &kp P             &kp BACKSPACE
+&lmt LCTRL ESCAPE  &lmt LSHIFT A  &kp S            &kp D         &kp F                &kp G    &kp H  &kp J                &kp K       &kp L       &lmt RSHIFT SEMI  &kp RCTRL
+&kp LGUI           &kp Z          &hml LEFT_GUI X  &kp C         &kp V                &kp B    &kp N  &kp M                &kp COMMA   &kp PERIOD  &kp SLASH         &kp RGUI
+                                                   &kp LEFT_ALT  &thumb_lt SYM SPACE  &mo 1    &mo 4  &thumb_lt NAV ENTER  &caps_word
             >;
 
             label = "DEFAULT";
@@ -312,10 +312,10 @@
 
         num_layer {
             bindings = <
-&trans  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
-&trans  &trans        &trans        &trans        &trans        &kp F11         &kp F12       &trans        &trans        &trans        &trans        &trans
-                                    &trans        &trans        &trans          &trans        &trans        &trans
+&kp F1  &kp F2  &kp F3  &kp F4   &kp F5   &kp F6     &trans     &kp N7  &kp N8  &kp N9  &kp MINUS  &kp STAR
+&kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12    &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp PLUS   &kp SLASH
+&trans  &trans  &trans  &trans   &trans   &trans     &kp N0     &kp N1  &kp N2  &kp N3  &trans     &trans
+                        &trans   &trans   &trans     &trans     &trans  &trans
             >;
 
             label = "NUM";
@@ -323,10 +323,10 @@
 
         sym_layer {
             bindings = <
-&trans  &kp EXCL   &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
-&trans  &kp GRAVE  &trans  &trans    &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &trans
-&trans  &kp TILDE  &trans  &trans    &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &trans
-                           &trans    &trans    &trans       &trans     &trans     &trans
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp LPAR  &kp RPAR  &kp BSLH  &kp GRAVE
+&trans  &trans    &trans  &trans    &trans    &trans       &kp UNDER  &kp EQUAL  &kp LBKT  &kp RBKT  &kp PIPE  &trans
+&trans  &trans    &trans  &trans    &trans    &trans       &kp TILDE  &trans     &kp LBRC  &kp RBRC  &trans    &trans
+                          &trans    &trans    &trans       &trans     &trans     &trans
             >;
 
             label = "SYM";
@@ -341,6 +341,17 @@
             >;
 
             label = "NAV";
+        };
+
+        TBD {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+
+            label = "TBD";
         };
     };
 };
