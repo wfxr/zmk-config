@@ -187,10 +187,10 @@
 
         app_layer {
             bindings = <
-&kp LG(GRAVE)  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans         &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                               &trans  &trans  &trans    &trans  &trans  &trans
+&kp LG(GRAVE)  &trans  &trans  &trans  &trans  &trans    &trans          &kp K_MUTE    &kp K_PLAY_PAUSE  &trans      &trans  &trans
+&trans         &trans  &trans  &trans  &trans  &trans    &kp C_PREVIOUS  &kp C_VOL_DN  &kp C_VOL_UP      &kp C_NEXT  &trans  &trans
+&trans         &trans  &trans  &trans  &trans  &trans    &trans          &trans        &trans            &trans      &trans  &trans
+                               &trans  &trans  &trans    &trans          &trans        &trans
             >;
 
             label = "APP";
