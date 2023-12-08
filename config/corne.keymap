@@ -180,7 +180,7 @@
 
         esc {
             bindings = <&kp ESC>;
-            key-positions = <19 20>;
+            key-positions = <15 16>;
         };
 
         backspace {
