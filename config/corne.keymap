@@ -241,9 +241,9 @@
 
         nav_layer {
             bindings = <
-&trans      &trans        &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans          &trans          &kp PAGE_DOWN   &kp PAGE_UP   &trans           &trans  &kp DEL
+&trans      &trans        &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &trans          &trans          &kp PAGE_DOWN   &kp PAGE_UP   &trans           &trans  &kp DELETE
 &trans      &bt BT_SEL 0  &bt BT_SEL 1      &bt BT_SEL 2       &bt BT_SEL 3       &bt BT_SEL 4    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&bt BT_CLR  &trans        &out OUT_USB      &out OUT_BLE       &out OUT_TOG       &trans          &kp DEL         &kp HOME        &kp END       &trans           &trans  &trans
+&bt BT_CLR  &trans        &out OUT_USB      &out OUT_BLE       &out OUT_TOG       &trans          &kp BACKSPACE   &kp HOME        &kp END       &trans           &trans  &trans
                                             &trans             &trans             &trans          &trans          &trans          &trans
             >;
 
